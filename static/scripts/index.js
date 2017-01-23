@@ -1,19 +1,3 @@
-$(function() {
-  var email_form = '' +
-    '<div class="EmailForm hide">' +
-    '<div class="handle">Ask us anything!</div>' +
-    '<div class="form">' +
-    '<input class="name" placeholder="Name (How should we call you?)" /><br>' +
-    '<input class="email" placeholder="Email (How do we reach you?)" /><br>' +
-    '<textarea class="message" placeholder="Any question? We have an answer for you! "></textarea><br>' +
-    '<div class="error_message"></div>' +
-    '<div class="email_form_submit">Send</div>' +
-    '</div></div>';
-
-  $('body').append(email_form);
-
-});
-
 $('.EmailForm .handle').live('click', function() {
   toggleForm();
 });

@@ -1,0 +1,14 @@
+<div class="leftmenu">
+  <h4>About Us</h4>
+  {{ $title := .Title }}
+  <ul>
+    {{ range (index .Site.Sections "about-us").Pages }}
+      <li>
+        <a href="{{ .RelPermalink }}"
+           {{ if eq .Title $title }}class="current"{{end}}>
+          - {{ humanize .Title }}
+        </a>
+      </li>
+    {{ end }}
+  </ul>
+</div>
